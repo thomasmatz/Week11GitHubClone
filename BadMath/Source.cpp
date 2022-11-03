@@ -1,10 +1,13 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
+	/*	I made two (2) changes to this code.
+	One for the average function and one for
+			the user input of n3.*/
 float average(int i1, int i2, int i3)
 {
-	return i1 + i2 + i3 / 3.0f;
+	//return i1 + i2 + i3 / 3.0f;
+	return (i1 + i2 + i3) / 3.0f;
 }
 
 int main()
@@ -13,7 +16,8 @@ int main()
 	cout << "This program calculates the average of three numbers." << endl;
 	cout << "First number: "; cin >> n1;
 	cout << "Second number: "; cin >> n2;
-	cout << "Third number: "; cin >> n2;
+	//cout << "Third number: "; cin >> n2;
+	cout << "Third number: "; cin >> n3;
 
 	float a = average(n1, n2, n3);
 
